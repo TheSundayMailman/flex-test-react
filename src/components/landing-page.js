@@ -9,7 +9,7 @@ class LandingPage extends React.Component {
 
       {/* <!-- Header --> */}
       <header className="header">
-        <h1>My Website</h1>
+        <h1>Enabled: align-items, justify-content</h1>
         <p>With a <b>flexible</b> layout.</p>
       </header>
 
