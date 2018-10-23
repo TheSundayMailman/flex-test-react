@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +26,8 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #333;
 }
@@ -50,21 +48,28 @@ body {
 
 /* Column container */
 .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side-col {
-  flex: 30%;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
 }
 
 /* Main column */
 .main-col {
-  flex: 70%;
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
   background-color: white;
   padding: 20px;
 }
@@ -87,12 +92,17 @@ body {
 }
 
 .footer-col {
-  flex: 33%;
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .flex-row, .navbar {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
   }
 }
