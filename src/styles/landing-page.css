@@ -38,9 +38,9 @@ body {
   /* -webkit-box-pack: center; */
   /* -ms-flex-pack: center; */
     /* justify-content: center; */
-  /* -webkit-box-align: stretch; */
-  /* -ms-flex-align: stretch; */
-    /* align-items: stretch; */
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+    align-items: stretch;
   height: auto;
   overflow: visible;
 }
