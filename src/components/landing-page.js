@@ -7,11 +7,6 @@ class LandingPage extends React.Component {
     return (
       <React.Fragment>
 
-      {/* <!-- Note --> */}
-      <div className="sticky">
-        <p>Resize the browser window to see the responsive effect.</p>
-      </div>
-
       {/* <!-- Header --> */}
       <header className="header">
         <h1>My Website</h1>
